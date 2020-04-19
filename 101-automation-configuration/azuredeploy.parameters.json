@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "adminUsername": {
-            "value": "GEN-UNIQUE"
+            "value": ""
         },
         "adminPassword": {
-            "value": "GEN-PASSWORD"
+            "value": ""
         },
         "safeModePassword": {
-            "value": "GEN-PASSWORD"
+            "value": ""
         },
         "location": {
             "value": "eastus2"
