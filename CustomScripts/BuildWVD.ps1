@@ -1,8 +1,10 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 # Partition & Format the data disk
 Get-Disk | Where-Object PartitionStyle -eq 'raw' | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "DataDisk1" -Confirm:$false
+# Install Microsoft Edge
+choco install microsoft-edge -y
 # Install Docker Desktop
-# choco install docker-desktop -y
+choco install docker-desktop -y
 # Install PowerShell-Core 7
 choco install powershell-core -y
 # Instal Azure Data Studio
