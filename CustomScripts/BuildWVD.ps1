@@ -21,8 +21,8 @@ choco install powershell-core -y
 # Instal Azure Data Studio
 choco install azure-data-studio -y
 # Scan for updates and install them, including other microsoft products
-$Updates = Start-WUScan -SearchCriteria "IsInstalled=0 AND IsHidden=0 AND IsAssigned=1"
-Write-Host "Updates found: " $Updates.Count
-Install-WUUpdates -Updates $Updates
+#$Updates = Start-WUScan -SearchCriteria "IsInstalled=0 AND IsHidden=0 AND IsAssigned=1"
+#Write-Host "Updates found: " $Updates.Count
+#Install-WUUpdates -Updates $Updates
 # Restart Computer
 Restart-Computer -Force
